@@ -11,10 +11,11 @@ from .services.cooking import suggest_recipes, create_meal_plan
 app = FastAPI(title="FoodVerse API", version="0.1.0", description="Multimodal Food Intelligence demo API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=[
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://foodverse-1-hrl7.onrender.com",
+],
 )
 
 UPLOAD_DIR = Path("uploads")

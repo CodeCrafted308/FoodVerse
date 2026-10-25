@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+
+const API = import.meta.env.VITE_API_URL || 'https://foodverse-4gw2.onrender.com'
 const features = [
   ['01', 'Food recognition', 'Identify dishes and food items from an image.', 'Scan'],
   ['02', 'Nutrition intelligence', 'Explore estimated calories and macros.', 'Nutrition'],
